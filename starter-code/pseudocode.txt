@@ -7,8 +7,8 @@ func sumArray(var A as array of length n)
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: linear: O(n)
+Explanation: sum starts off at 0 and goes through each iteration of the array and adds to the original sum. Because it goes through each iteration, it's linear.
 
 ----------------------------------------------------------------
 
@@ -21,8 +21,8 @@ func sumMatrix(var A as n x n matrix) // A matrix can be represented as an array
     return sum
 end func
 
-Running time: 
-Explanation: 
+Running time: linear: O(n)
+Explanation: As it goes down array A it adds everything in A[i] then goes to A[i+1] until it get to A[n] and because everything in the sub array is constant, it's just linear.
 
 ----------------------------------------------------------------
 
@@ -37,8 +37,8 @@ func countDivisionsByTwo(var n as int)
     return count
 end func
 
-Running time: 
-Explanation: 
+Running time: Logarithmic: O(log(n))
+Explanation: It divides it by 2 each time. The amount of time would be whatever number to the second power it takes to get to n.
 
 ----------------------------------------------------------------
 
@@ -52,8 +52,8 @@ func arrayMax(var A as array of length n)
     return currentMax
 end func
 
-Running time: 
-Explanation: 
+Running time: Linear: O(n)
+Explanation: Method is just looking for the maximum value so as it goes through the array, it checks to see if it's higher than the currentMax. If it is, it sets it to the new max just found and continues going through the list until it reaches n.
 
 ----------------------------------------------------------------
 
@@ -73,5 +73,5 @@ func bonusFunction(var n as int)
     return total
 end func
 
-Running time: 
-Explanation: 
+Running time: polynomial: O(n^3)
+Explanation: There are three nested loops. The second nested loop is quadratic (n^2 ) but it's within another for loop which makes it n^3.
